@@ -48,7 +48,7 @@ scipy
 seaborn
 six
 tensorboard
-tensorflow
+tensorflow==2.12.1
 termcolor
 threadpoolctl
 tqdm
