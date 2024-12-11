@@ -58,3 +58,4 @@ urllib3
 Werkzeug
 wrapt
 gunicorn
+Flask-CORS
