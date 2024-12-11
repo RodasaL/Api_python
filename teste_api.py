@@ -2,6 +2,7 @@ import tensorflow as tf
 import numpy as np
 from flask import Flask, request, jsonify
 from PIL import Image
+from flask_cors import CORS
 
 # Configurações
 MODEL_PATH = "animal_classifier_model.h5"
@@ -15,7 +16,7 @@ cifar_labels = [
 
 # Inicializar Flask
 app = Flask(__name__)
-
+CORS(app)  # Habilitar CORS Cross-Origin Resource Sharing para permitir chamadas da API a partir do navegador
 # Carregar o modelo
 try:
     model = tf.keras.models.load_model(MODEL_PATH)
