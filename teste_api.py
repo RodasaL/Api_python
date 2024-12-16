@@ -10,7 +10,7 @@ TARGET_SIZE = (96, 96)
 
 # Mapear os índices das classes para os seus rótulos reais
 cifar_labels = [
-    "passaro", "gato", "viado",
+    "passaro", "gato", "veado",
     "cao", "sapo", "cavalo"
 ]
 
